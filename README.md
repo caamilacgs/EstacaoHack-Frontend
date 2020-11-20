@@ -2,9 +2,6 @@
 
 ![logo2](https://user-images.githubusercontent.com/60848932/99765926-dcc5f800-2ade-11eb-821d-7746348280a4.png)
 
- tem como objetivo formar novos profissionais de programação Front-End. O programa foi desenvolvido para quem quer aprender a programar do zero e adquirir habilidades em React (CSS, HTML e JavaScript), além de soft skills em Git e Metodologias Ágeis. Carga horária: 105 horas (5 semanas). Público-alvo: alunos à partir de 16 anos.
-
-
 ### Curso: Desenvolvimento Front-end
 
 > Front-end Coding Course: tem como objetivo formar novos profissionais de programação Front-End.
