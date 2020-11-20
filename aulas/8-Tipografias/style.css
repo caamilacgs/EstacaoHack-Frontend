@@ -1,0 +1,14 @@
+p {
+  font-weight: bold;
+  /*Que esteja em negrito*/
+  font-family: Arial;
+  /*Que tenha tipografia Arial*/
+  text-decoration: underline;
+  /*Que esteja sublinhado*/
+  font-style: italic;
+  /*Que esteja itálico*/
+  font-size: 20px;
+  /*Que tenha 20px de tamanho de letra*/
+  text-align: center;
+  /*Que esteja centralizado*/
+}

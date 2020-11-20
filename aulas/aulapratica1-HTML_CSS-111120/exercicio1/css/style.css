@@ -1,0 +1,46 @@
+body {
+  font-family: 'Verdana', 'Geneva', sans-serif;
+  /* Família tipográfica */
+  width: 700px;
+  /* Largura do corpo  */
+  font-size: 18px;
+  /* Tamanho da fonte */
+  margin-left: 25%;
+  /* Ajusta a margin da pagina levando para o lado direito */
+}
+
+img {
+  align-items: center;
+  margin-left: 11%;
+  /* Ajusta a margin da pagina levando para o lado direito */
+}
+
+h1 {
+  /* Título principal  */
+  font-size: 37px;
+  /* Tamanho da fonte */
+  line-height: 46px;
+  /* Espaço entre as linhas  */
+  font-family: 'Tahoma', 'Helvetica', sans-serif;
+  /*  Família tipográfica */
+  color: #000000;
+  /* cor dos texto  */
+}
+
+h2 {
+  font-size: 25px;
+  /*  Tamanho da fonte:*/
+  line-height: 38px;
+  /* Espaço entre as linhas  */
+  font-family: 'Tahoma', 'Helvetica', sans-serif;
+  /*  Família tipográfica */
+}
+
+p {
+  color: #333;
+  /* cor da fonte  */
+  line-height: 27px;
+  /* Espaço entre as linhas  */
+  font-size: 18px;
+  /* Tamanho da fonte  */
+}

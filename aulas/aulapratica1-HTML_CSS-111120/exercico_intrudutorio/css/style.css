@@ -1,0 +1,27 @@
+body {
+  background-image: url("../img/html-css-js.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+h3 {
+  color: rgb(255, 153, 0);
+}
+
+#saudacao {
+  color: blueviolet;
+}
+
+h5.color-red {
+  color: green;
+}
+
+.color-red {
+  color: red;
+}
+
+p {
+  background-color: aqua;
+  color: blue;
+
+}

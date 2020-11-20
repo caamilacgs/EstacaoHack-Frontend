@@ -1,0 +1,16 @@
+body {
+  background-image: url('https://images3.alphacoders.com/621/621682.jpg');
+  background-size: cover;
+  position: top;
+}
+
+h1 {
+  color: #F4E033;
+  background-color: black;
+}
+
+h2 {
+  color: white;
+  background-color: orange;
+  opacity: 0.4;
+}

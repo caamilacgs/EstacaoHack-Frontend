@@ -1,0 +1,41 @@
+body {
+  background-image: url(/img/bg-2.png);
+  font-family: Verdana, Tahoma, sans-serif;
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+}
+
+img.logo {
+  position: absolute;
+  top: 20px;
+  left: 25px;
+}
+
+header {
+  background-color: rgba(255, 60, 0, 0.918);
+  height: 50px;
+  margin-left: 50px;
+  margin-right: 50px;
+  box-sizing: border-box;
+  align-items: center;
+  margin-top: 50px;
+
+}
+
+header li {
+  color: white;
+  float: left;
+  display: inline;
+  padding: 20px 20px;
+
+}
+
+header ul {
+  border: 1px solid #e7e7e7;
+}
+
+li a {
+  color: white;
+  text-decoration: none;
+
+}

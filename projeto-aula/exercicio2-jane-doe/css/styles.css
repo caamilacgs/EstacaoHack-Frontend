@@ -1,0 +1,104 @@
+body {
+  font-family: "Raleway", sans-serif;
+  margin: 0;
+}
+
+#home {
+  background-image: url(../img/jane.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 0 -25vh;
+
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  height: 7.5vh;
+  box-shadow: 0 4px 8px #d3d3d3;
+}
+
+.title h1 {
+  font-size: 20px;
+  margin-left: 20px;
+}
+
+.links {
+  display: flex;
+  flex-direction: row;
+}
+
+.links a {
+  text-decoration: none;
+  color: black;
+  margin-right: 20px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-bottom: 60px;
+}
+
+#about{
+    align-items: center;
+}
+
+.content h1{
+    margin-bottom: 12px;
+}
+
+.content p {
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
+
+.content img {
+  margin-top: 24px;
+  object-fit: cover;
+  width: 75%;
+}
+
+.content iframe{
+    margin-top: 12px;
+}
+
+hr{
+    width: 100%;
+    margin-top: 12px;
+}
+
+#music p{
+    margin-top: 18px;
+}
+
+#contact h1{
+    margin-bottom: 8px;
+}
+
+#contact p{
+    margin-top: 8px;
+}
+
+footer {
+  height: 6vh;
+  width: 100%;
+  text-align: center;
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer p {
+  font-size: 16px;
+}
