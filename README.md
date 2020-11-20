@@ -6,10 +6,10 @@
 
 > Front-end Coding Course: tem como objetivo formar novos profissionais de programação Front-End.
 > O programa foi desenvolvido para quem quer aprender a programar do zero e adquirir habilidades em
-> React (CSS, HTML e JavaScript) E desenvolver
+> React (CSS, HTML e JavaScript) e desenvolver
 > soft skills em Git e Metodologias Ágeis.
 > Carga horária: 105 horas (5 semanas).
-> or formatting instructions.
+
 
 
 #### Conteudo do Curso:
