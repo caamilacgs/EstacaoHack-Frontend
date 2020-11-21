@@ -1,0 +1,39 @@
+
+
+Lista de comandos - GIT
+
+git --version (consulta a versão do git)
+git config --global user.name "nome.sobrenome" (adiciona usuario)
+git config --global user.email "email" (adiciona email)
+git config --list (lista as configuracoes globais)
+git init (inicializa repositorio)
+ls (lista diretorio)
+ls -a (lista pasta oculta)
+git status (mostra o status do diretorio)
+git add arquivo (adiciona somente o arquivo)
+git add . (adiciona a pasta inteira)
+git commit -m "mensagem" (grava uma imagem do diretorio)
+git log (mostra o registro do commit)
+git log --oneline (mostrar commit em uma linha)
+git commit am "mensagem" (executa o git add junto com o commit)
+git checkout id-arquivo (ele entra no commit do id informado)
+git checkout nome-branch (pra voltar pra o inicio e conseguir ver todos os commits)
+git remote add origin"link" (expecifica o caminho que vai licar o repositorio)
+git branch -M main (ele ta direcionando o caminho do projeto para a branch main)
+git push -u origin main (ta importando todo o diretorio para a branch)
+git clone para (clonar o repositorio)
+git checkout -b aula-manha (criou e acessou a nova branch)
+
+----
+
+Comandos uteis para terminal
+
+touch arquivo.text (cria arquivo)
+mkdir (cria diretorio)
+cat arquivo.txt (abre o arquivo no console)
+cat > arquivo.txt texto a ser gravado (digita o texto no console e grava no arquivo
+
+----
+
+
+link de outros comandos: https://github.com/VictorCaldas/Github-Guide-to-code 

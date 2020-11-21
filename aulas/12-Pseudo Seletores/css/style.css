@@ -1,0 +1,26 @@
+body {
+  font-family: 'Arial';
+}
+
+/* Pseudo Seletores */
+
+input {
+  border-color: blue;
+}
+
+input:hover {
+  border-color: orangered;
+
+}
+
+input:focus {
+  width: 200px;
+}
+
+p:hover {
+  color: orangered;
+}
+
+p:last-of-type {
+  background-color: blueviolet;
+}

@@ -3,6 +3,8 @@
 
 <head>
   <meta charset="UTF-8">
+  <link href="style.css" rel='stylesheet'>
+  <link rel="sortcut icon" href="../img/icone.png" type="image/png" />
   <title>Formulario</title>
 
   <style>
@@ -108,26 +110,190 @@
   <p> Para este exercício te damos um formulário já definido que está quase completo. Queremos que adicione algo
     fundamental que está faltando: um botão que diga "ENVIAR" para que o usuário possa, de fato, enviar seus dados. </p>
   <form action="resultado.html" method="POST">
-    <p>
-      <label>Nome:</label>
-      <input type="text" name="nome" required>
-    </p>
-
-    <p>
-      <label>E-mail:</label>
-      <input type="email" name="email" required>
-    </p>
-
-    <p>
-      <label>Senha:</label>
-      <input type="password" name="senha" required>
-    </p>
-
-    <p>
-      <input type="submit" value="ENVIAR">
-    </p>
+    <p><label>Nome:</label> <input type="text" name="nome" required></p>
+    <p><label>E-mail:</label><input type="email" name="email" required></p>
+    <p><label>Senha:</label><input type="password" name="senha" required></p>
+    <p><input type="submit" value="ENVIAR"></p>
   </form>
-  <h1> Formularios - Parte 2</h1>
+
+
+  <h1> Formularios - Parte 2 (Radio Button e Check Boxes)</h1>
+  <h2> Form 1 - video explicativo</h2>
+  <form>
+    <p>
+      <label for="nome">Nome: </label>
+      <input type="text" id="nome" nome="nome" placeholder="Digite seu nome">
+    <p>
+      <label for="email">Email: </label>
+      <input type="email" id="email" nome="email" value="email">
+    </p>
+    <p>
+      <label for="senha">Senha: </label>
+      <input type="password" id="senha" nome="senha">
+    </p>
+    <p>
+      <label>Você já foi ao cinema esse ano? </label>
+      <br>
+      <input type="radio" id="sim" name="cinema" value="sim"><label for="sim">Sim</label>
+      <br>
+      <input type="radio" id="nao" name="cinema" value="nao"><label for="nao">Não</label>
+    </p>
+    <p>
+      <label for="genero"> Qual seu genero de cinema favorito? </label>
+      <br>
+      <input type="checkbox" name="genero" id="terror" value="terror"> <label for="terror">Terror</label>
+      <br>
+      <input type="checkbox" name="genero" id="drama" value="drama"> <label for="drmama">Drama</label>
+      <br>
+      <input type="checkbox" name="genero" id="romance" value="romance"> <label for="romance">Romance</label>
+    </p>
+    <button type="submit">Enviar</button>
+  </form>
+
+
+
+  <h2> Form 2 - Tem Pet? </h2>
+  <p>Vamos criar um formulário para perguntar se o usuário possui ou não um bicho de estimação.
+    Para tanto, dentro do formulário que foi fornecido:
+    <li>crie um "label" com o texto "Você tem um pet?"</li>
+    <li>adicione dois radio-button para dar a opção "Sim" e a opção "Não"</li>
+    <li>configure o atributo name="pet" nos dois "input" para que entenda que estamos falando do mesmo campo.</li>
+    <li>Para poder verificar logo qual foi a opção escolhida pelo usuário não se esqueça de adicionar o atributo value
+      em cada "input". Para a opção "Sim" o valor deverá ser la letra s, e para a opção "Não" a letra n.</li>
+  </p>
+  <form action="resultado.html" method="POST">
+    <p>
+      <label>Você tem pet? </label>
+      <br>
+      <input type="radio" id="sim" name="pet" value="s"><label for="sim">Sim</label>
+      <br>
+      <input type="radio" id="nao" name="pet" value="n"><label for="nao">Não</label>
+    </p>
+
+    <input type="submit" value="Enviar">
+  </form>
+
+  <h2> Form 3 - Hobbies? </h2>
+  <p>Vamos criar um formulário para saber os hobbies do usuário.
+    Para tal pedimos que dentro do formulário cedido:
+    <li>crie um "label" com o texto "Quais são seus hobbies?"</li>
+    <li>adicione dois radio-button para dar a opção "Sim" e a opção "Não"</li>
+    <li>configure o atributo name="pet" nos dois "input" para que entenda que estamos falando do mesmo campo.</li>
+    <li>Para poder verificar logo qual foi a opção escolhida pelo usuário não se esqueça de adicionar o atributo value
+      em cada "input". Para a opção "Sim" o valor deverá ser la letra s, e para a opção "Não" a letra n.</li>
+  </p>
+  <form action="resultado.html" method="POST">
+    <p>
+      <label for="hobbie"> Quais são seus hobbies? </label>
+      <br>
+      <input type="checkbox" name="hobby" id="pescar" value="pescar"> <label for="pescar">Pescar</label>
+      <br>
+      <input type="checkbox" name="hobby" id="correr" value="correr"> <label for="correr">Correr</label>
+      <br>
+      <input type="checkbox" name="hobby" id="yoga" value="yoga"> <label for="yoga">Yoga</label>
+    </p>
+
+    <input type="submit" value="Enviar">
+  </form>
+
+
+  <h1> Formularios - Parte 3 (select, textarea e buttons, required)</h1>
+  <h2> Form 1 - video explicativo</h2>
+  <form>
+    <p>
+      <label for="nome">Nome: </label>
+      <input type="text" id="nome" nome="nome" placeholder="Digite seu nome" required>
+    <p>
+      <label for="email">Email: </label>
+      <input type="email" id="email" nome="email" value="email" required>>
+    </p>
+    <p>
+      <label for="senha">Senha: </label>
+      <input type="password" id="senha" nome="senha">
+    </p>
+    <p>
+      <label>Você já foi ao cinema esse ano? </label>
+      <br>
+      <input type="radio" id="sim" name="cinema" value="sim"><label for="sim">Sim</label>
+      <br>
+      <input type="radio" id="nao" name="cinema" value="nao"><label for="nao">Não</label>
+    </p>
+    <p>
+      <label for="genero"> Qual seu genero de cinema favorito? </label>
+      <br>
+      <input type="checkbox" name="genero" id="terror" value="terror"> <label for="terror">Terror</label>
+      <br>
+      <input type="checkbox" name="genero" id="drama" value="drama"> <label for="drmama">Drama</label>
+      <br>
+      <input type="checkbox" name="genero" id="romance" value="romance"> <label for="romance">Romance</label>
+    </p>
+    <p>
+      <!-- Dropdown ou Select , nos permiter agrupar opcoes -->
+      <label for="pais"> País </label>
+      <select name="pais" id="pais">
+        <option selected disabled> Selecione </option>
+        <option value="BRA"> Brasil </option>
+        <option value="AR"> Argentina </option>
+        <option value="UY"> Uruguai </option>
+      </select>
+    </p>
+    <!-- Text area é um campo de texto. Geralmente e usado para o usuario escrever comentarios -->
+    <label for="mensagem"> Mensagem </label>
+    <br>
+    <textarea name="mensagem" id="mensagem" cols="50" row="15"></textarea>
+    <br>
+    <!-- Tipos de botão -->
+    <button type="button">Teste</button>
+    <button type="reset"> Limpar Campo </button>
+    <button type="submit">Enviar</button>
+  </form>
+
+  <h2> Form 2 - selecionando mês </h2>
+  <p>
+    Vamos criar um pequeno formulário com um drop-down (menu suspenso) para que o usuário possa selecionar o mês de seu
+    aniversário.
+    <li>Para isso, precisaremos criar a tag "select" com o atributo e valor name="mes". Dentro do "select" precisará
+      criar 12 tags "option", uma para cada mês, declarando em cada caso o texto a ser lido pelo usuário: Janeiro,
+      Fevereiro, Março, etc... </li>
+    <li>Não se esqueça, também, de escrever o atributo value em cada tag "option". Mas atenção, a intenção é que, como
+      valor, esse atributo receba o número que representa o mês no calendário. Exemplo: 1 se refere à Janeiro, 2 se
+      refere à Fevereiro, e assim por diante..</li>
+  </p>
+  <form action="index.html" method="POST">
+    <label>Selecione o mês do seu aniversário:</label>
+    <select name="mes" id="mes">
+      <option value="1">Janeiro</option>
+      <option value="2">Fevereiro</option>
+      <option value="3"> Março</option>
+      <option value="4"> Abril </option>
+      <option value="5"> Maio </option>
+      <option value="6">Junho </option>
+      <option value="7"> Julho </option>
+      <option value="8"> Agosto </option>
+      <option value="9"> Setembro</option>
+      <option value="10"> Outubro </option>
+      <option value="11"> Novembro </option>
+      <option value="12">Dezembro </option>
+    </select>
+
+    <input type="submit" value="Enviar">
+  </form>
+
+  <h2> Form 3 - escrever comentário </h2>
+  <p>Queremos saber a opinião de nossos usuários. <br>
+    Portanto adicione no formulário já declarada, a tag que permite ao usuário escrever um comentário.
+    <br>
+    Ademais, crie duas tags "button" configurando o atributo type para que o usuário possa ver um botão que diga
+    "Enviar" e um botão que diga "Apagar", que ao clicar apague o que está escrito.
+
+  </p>
+  <form action="resultado.html" method="POST">
+    <label>Deixe seu comentário: </label><br>
+    <textarea name="comentario" id="comentario"></textarea>
+    <br>
+    <button type="submit">Enviar</button>
+    <button type="reset"> Apagar </button>
+  </form>
 </body>
 
 </html>

@@ -3,131 +3,94 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Formulario</title>
-
-  <style>
-    body {
-      font-family: arial;
-    }
-
-    h1 {
-      color: blueviolet;
-    }
-  </style>
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="sortcut icon" href="img/icone.webp" type="image/png" />
+  <link href="css/style.css" rel="stylesheet">
+  <title>Pseudo Seletores</title>
 </head>
 
 <body>
-  <h1> Formularios - Parte 1</h1>
-  <p>Muitas vezes nos passamos informações para um site.
-
-    Por exemplo:
-    <li>Quando fazemos login </li>
-    <li>Quando realizamos um comentário</li>
-    <li>Quando preenchemos os campos para fazer uma compra</li>
-  </p>
+  <h1>Pseudo Seletores</h1>
+  <p>Algumas vezes quando passamos com o mouse por cima de algum pedaço de uma pagina na web podemos ver que a mesma
+    muda.</p>
+  <p>Também ao clicar podemos chegar a ver algumas mudanças de forma e cor.</p>
+  <p>Isto acontece devido a uma funcionalidade muito interessante que nos permite adicionar ações a certos eventos que
+    acontecem.</p>
+  <p>Vamos descobrir alguns deles!</p>
 
   <h2> Form 1 - video explicativo</h2>
+
+  <p>
+    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam tenetur iure ut recusandae fugit voluptatum qui,
+    beatae, facilis quod magnam deserunt culpa iste ipsa omnis velit aspernatur modi praesentium et.
+  </p>
+  <p>
+    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam tenetur iure ut recusandae fugit voluptatum qui,
+    beatae, facilis quod magnam deserunt culpa iste ipsa omnis velit aspernatur modi praesentium et.
+  </p>
+  <p>
+    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam tenetur iure ut recusandae fugit voluptatum qui,
+    beatae, facilis quod magnam deserunt culpa iste ipsa omnis velit aspernatur modi praesentium et.
+  </p>
+
+
+
+
+
+
+
+
+
+
+
   <form>
     <p>
       <label for="nome">Nome: </label>
-      <input type="text" id="nome" nome="nome" placeholder="Digite seu nome">
+      <input type="text" id="nome" nome="nome" placeholder="Digite seu nome" required>
     <p>
       <label for="email">Email: </label>
-      <input type="email" id="email" nome="email" value="email">
+      <input type="email" id="email" nome="email" value="email" required>
     </p>
     <p>
       <label for="senha">Senha: </label>
       <input type="password" id="senha" nome="senha">
     </p>
-    <!--<input type="submit" value="enviar"> outra ofrma de fazer o botao -->
+    <p>
+      <label>Você já foi ao cinema esse ano? </label>
+      <br>
+      <input type="radio" id="sim" name="cinema" value="sim" checked><label for="sim">Sim </label>
+      <br>
+      <input type="radio" id="nao" name="cinema" value="nao"><label for="nao">Não</label>
+    </p>
+    <p>
+      <label for="genero"> Qual seu genero de cinema favorito? </label>
+      <br>
+      <input type="checkbox" name="genero" id="terror" value="terror" checked> <label for="terror">Terror</label>
+      <br>
+      <input type="checkbox" name="genero" id="drama" value="drama"> <label for="drmama">Drama</label>
+      <br>
+      <input type="checkbox" name="genero" id="romance" value="romance"> <label for="romance">Romance</label>
+    </p>
+    <p>
+      <label for="pais"> País </label>
+      <select name="pais" id="pais">
+        <option selected disabled> Selecione </option>
+        <option value="BRA"> Brasil </option>
+        <option value="AR"> Argentina </option>
+        <option value="UY"> Uruguai </option>
+      </select>
+    </p>
+    <label for="mensagem"> Mensagem </label>
+    <br>
+    <textarea name="mensagem" id="mensagem" cols="50" row="15"></textarea>
+    <br>
+    <a href=""></a>
+    <!-- Tipos de botão -->
+    <button type="button">Teste</button>
+    <button type="reset"> Limpar Campo </button>
     <button type="submit">Enviar</button>
   </form>
 
-  <h2> Form 2 - exercicio 1 </h2>
-  <p> Para tal escreva no arquivo index.html a tag necessário para criar um formulário, declarando 2 de seus atributos
-    essenciais:
-    <li>O atributo method que tenha POST como valor</li>
-    <li>O atributo action que tenha resultado.html como valor</li>
-  </p>
-  <h4> Resolução: form action="resultado.html" method="POST"
-    <form action="resultado.html" method="POST">
-    </form>
-  </h4>
-
-  <h2> Form 3 - Campo de Texto </h2>
-  <p>Queremos um campo dentro do formulário para que o usuário possa inserir seu nome. Para conseguirmos isso é
-    necessário inserir duas tags dentro do formulário:
-    <li> A tag "label", para informar ao usuário que deve inserir seu nome. A mesma deverá ter o atributo for com o
-      valor nome. </li>
-    <li>A tag "input" com atributo type com o valor text (para que o usuário possa inserir seu nome) e o atributo id
-      com o valor nome. Por último, declare o atributo name com o valor nome já que se este atributo não existir, não
-      se enviará o campo como resultado.</li>
-  <p>Lembre-se que se estiverem bem configurados os atributos for da tag "label" e o atributo id da tag "input",
-    ao clicar na "label" o cursor para escrever se posicionará automaticamente no "input" relacionado.
-  </p>
-  </p>
-  <h4> Resolução:</h4>
-  <form action="resultado.html" method="POST">
-    <p>
-      <label for="nome">nome:</label>
-      <input type="text" name="nome" required id="nome">
-    </p>
-  </form>
-
-  <h2> Form 4 - Mais Campos de Texto</h2>
-  <p>Queremos que adicione três campos para que o usuário possa inserir um nome, um e-mail e uma senha. Para isso, te
-    deixamos uma lista com as tags que deverá usar:
-    <li>A tag "input" para que o usuário insira seu nome </li>
-    <li> A tag "input" para que o usuário insira seu e-mail </li>
-    <li>A tag "input" para que o usuário insira sua senha </li>
-    <li> A tag "label" para cada um dos "input" </li>
-  </p>
-  <p>
-    Os três "input" devem conter o atributo name declarado, com os valores "nome", "email" e "senha" para que a
-    informação efetivamente viaje ao enviar o formulário.
-  </p>
-  <h4> Resolução:</h4>
-  <form action="resultado.html" method="POST">
-    <p>
-      <label>Nome:</label>
-      <input type="text" name="nome" required>
-    </p>
-
-    <p>
-      <label>E-mail:</label>
-      <input type="email" name="email" required>
-    </p>
-
-    <p>
-      <label>Senha:</label>
-      <input type="password" name="senha" required>
-    </p>
-  </form>
-  <h2> Form 5 - Completar Formulário</h2>
-  <p> Para este exercício te damos um formulário já definido que está quase completo. Queremos que adicione algo
-    fundamental que está faltando: um botão que diga "ENVIAR" para que o usuário possa, de fato, enviar seus dados. </p>
-  <form action="resultado.html" method="POST">
-    <p>
-      <label>Nome:</label>
-      <input type="text" name="nome" required>
-    </p>
-
-    <p>
-      <label>E-mail:</label>
-      <input type="email" name="email" required>
-    </p>
-
-    <p>
-      <label>Senha:</label>
-      <input type="password" name="senha" required>
-    </p>
-
-    <p>
-      <input type="submit" value="ENVIAR">
-    </p>
-  </form>
-  <h1> Formularios - Parte 2</h1>
 </body>
 
 </html>
